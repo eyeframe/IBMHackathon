@@ -7,6 +7,8 @@
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
 ![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
 # PREDICTING BUILDING DAMAGE :
+
+![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
 
 In this jupyter notebook we try to predict the damage of buildings in case of an earthquake based on features 
@@ -39,11 +41,11 @@ outgoing population and anomalies(red dots represent anomaly)
 # SENDING ALERTS AND NOTIFICATIONS :
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
-![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 # INFORMING PEOPLE THROUGH MESSAGES AND EMAIL :
 
 <img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
 <img src="https://user-images.githubusercontent.com/43675125/46229726-32316f00-c384-11e8-87a2-1abf927df1d5.jpg" width="400" height="800" />
+
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
