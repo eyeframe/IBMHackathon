@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/index2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <span id="app">
+        <header>
+            <nav>
+                <ul>
+                    <li class="nav-logo">
+                        <img src="/static/images/Logo.png" alt="Logo">
+                    </li>
+                    <li class="nav-alert" @click="notification=!notification">
+                        <img src="/static/images/exclamation-mark.svg" alt="">
+                        Alerts
+                    </li>
+                    <li class="nav-services" @click="redirect('/services')">
+                        <img src="/static/images/tools.svg" alt="">
+                        Services
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="start-text"></section>
+            <div id="map"></div>
+            <div class="chat-box" v-if="notification">
+                <div class="not-heading">NOTIFICATION</div>
+                <span class="messages" >
+                    <span v-for="message in messages">
+                        <div class="not-mess">
+                        {{message}}
+                        </div>
+                    </span>
+                </span>
+                <input type="text" class="input" placeholder="message" v-model="inputText">
+                <span class="btn-group">
+                    <button class="btn btn-blue" @click="send('sms')">Send Sms</button>
+                    <button class="btn btn-green" @click="send('email')">Send Email</button>
+                </span>
+            </div>
+        </main>
+        <footer></footer>
+    </span>
+    <script src="/static/javascript/index2.js" async defer></script>
+    <span id="google"></span>
+</body>
+
+</html>
