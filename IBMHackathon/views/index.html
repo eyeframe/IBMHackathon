@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EBM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <span id="app">
+        <header class="nav">
+            <ul>
+                <li class="nav-logo">
+                    <img src="/static/images/Logo.png" @click="window.location.href='/'">
+                </li>
+                <li class="nav-chat" @click="window.location.href='/chat'">
+                    <img src="/static/images/chat.svg">
+                    <h3>CHAT</h3>
+                </li>
+            </ul>
+            <div></div>
+        </header>
+
+        <main class="container">
+            <section id="map"></section>
+            <section class="weather">
+                <div :class="{'weather-section':true,'cover-weather':cover[0],'remove-weather':hide[0]}">
+                    <div class="weather-glimpse">
+                        <img :src="weatherType(weatherData.iconCode)">
+                        <h2>{{weatherData.temperature}}&#8451</h2>
+                        <h3>{{weatherData.cloudCoverPhrase}}</h3>
+                        <h3>{{icons[Number(weatherData.iconCode)]}}</h3>
+                    </div>
+                    <div :class="{'weather-data':true,'show-arrow':cover[0],'cover-weather':cover[0]}">
+                        <span class="weather-data-text">
+                            <h2>Relative Humidity : </h2>
+                            <h3>{{weatherData.relativeHumidity}}</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Day : </h2>
+                            <h3>{{weatherData.dayOfWeek}}</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Min Temperature (24hr) : </h2>
+                            <h3>{{weatherData.temperatureMin24Hour}}&#8451</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Max Temperature (24hr) : </h2>
+                            <h3>{{weatherData.temperatureMax24Hour}}&#8451</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Temperature Heat Index : </h2>
+                            <h3>{{weatherData.temperatureHeatIndex}}&#8451</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Temperature Change (24hr) : </h2>
+                            <h3>{{weatherData.temperatureChange24Hour}}&#8451</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Precipitation (24hr) : </h2>
+                            <h3>{{weatherData.precip24Hour}} cm</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Pressure Altimeter : </h2>
+                            <h3>{{weatherData.pressureAltimeter}} Pa</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Pressure Change : </h2>
+                            <h3>{{weatherData.pressureChange}} Pa</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Pressure Tendency Trend : </h2>
+                            <h3>{{weatherData.pressureTendencyTrend}}</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Wind Speed : </h2>
+                            <h3>{{weatherData.windSpeed}} m/s</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Wind Description : </h2>
+                            <h3>{{weatherData.wxPhraseShort}}</h3>
+                        </span>
+                        <span class="weather-data-text">
+                            <h2>Wind Direction Cardinal : </h2>
+                            <h3>{{weatherData.windDirectionCardinal}}</h3>
+                        </span>
+                    </div>
+                    <img src="/static/images/down-arrow.svg" :class="{'weather-arrow':true,'show-arrow':!cover[0]}"
+                        @click="coverToggle(0,true)">
+                    <img src="/static/images/up-arrow-no-bg.svg" :class="{'weather-arrow':true,'show-arrow':cover[0]}"
+                        @click="coverToggle(0,false)">
+                </div>
+                <div :class="{'weather-section':true,'cover-weather':cover[i + 1],'remove-weather':hide[i + 1]}" v-for="(weather,i) in weatherForecast">
+                    <!-- Day -->
+                    <div :class="{'weather-glimpse':true, 'night-weather':!nightDay[i]}">
+                        <img :src="weatherType(weather.iconCode[0])">
+                        <h2>{{weather.temperature[0]}}&#8451</h2>
+                        <h3>{{weather.cloudCoverPhrase}}</h3>
+                        <h3>{{icons[typeof(weather.iconCode[0]) === 'number' ?weather.iconCode[0]:44]}}</h3>
+                        <h3 class="weather-day">{{weather.dayOfWeek}}</h3>
+                    </div>
+                    <!-- Night -->
+                    <div :class="{'weather-glimpse':true, 'night-weather':nightDay[i]}">
+                        <img :src="weatherType(weather.iconCode[1])">
+                        <h2>{{weather.temperature[1]}}&#8451</h2>
+                        <h3>{{weather.cloudCoverPhrase}}</h3>
+                        <h3>{{icons[typeof(weather.iconCode[0]) === 'number' ?weather.iconCode[1]:44]}}</h3>
+                        <h3 class="weather-day">{{weather.dayOfWeek}}</h3>
+                    </div>
+                    <div :class="{'right-arrow':true}" v-if="!cover[i + 1]" @click="nightDaySetter(i)">
+                        <img src="/static/images/right-arrow.svg">
+                    </div>
+
+                    <div :class="{'weather-data':true,'show-arrow':cover[i + 1],'cover-weather':cover[i + 1]}">
+                        <span :class="{'weather-data-text':true}" v-if="nightDay[i]">
+                            <h2>Precipitation Type : </h2>
+                            <h3>{{weather.precipType[0]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="!nightDay[i]">
+                            <h2>Precipitation Type : </h2>
+                            <h3>{{weather.precipType[1]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="nightDay[i]">
+                            <h2>Precipitation Chance : </h2>
+                            <h3>{{weather.precipChance[0]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="!nightDay[i]">
+                            <h2>Precipitation Type : </h2>
+                            <h3>{{weather.precipChance[1]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="nightDay[i]">
+                            <h2>Relative Humidity : </h2>
+                            <h3>{{weather.relativeHumidity[0]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="!nightDay[i]">
+                            <h2>Relative Humidity : </h2>
+                            <h3>{{weather.relativeHumidity[1]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="nightDay[i]">
+                            <h2>Wind Speed : </h2>
+                            <h3>{{weather.windSpeed[0]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="!nightDay[i]">
+                            <h2>Wind Speed : </h2>
+                            <h3>{{weather.windSpeed[1]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="nightDay[i]">
+                            <h2>Wind Direction Cardinal: </h2>
+                            <h3>{{weather.windDirectionCardinal[0]}}</h3>
+                        </span>
+                        <span :class="{'weather-data-text':true}" v-if="!nightDay[i]">
+                            <h2>Wind Direction Cardinal : </h2>
+                            <h3>{{weather.windDirectionCardinal[1]}}</h3>
+                        </span>
+                    </div>
+
+                    <img src="/static/images/down-arrow.svg" :class="{'weather-arrow':true,'show-arrow':!cover[i + 1]}"
+                        @click="coverToggle(i + 1,true)">
+                    <img src="/static/images/up-arrow-no-bg.svg" :class="{'weather-arrow':true,'show-arrow':cover[i + 1]}"
+                        @click="coverToggle(i + 1,false)">
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div :class="{'notification':true,'notification-hide':notiHide}">
+                <div v-if="!notiHide && notifications.length>0">
+                    <span v-for="notification in notifications">
+                        <span class="alerts">{{notification}}</span>
+                    </span>
+                </div>
+                <div :class="{'empty':notifications.length===0 && !notiHide}"></div>
+                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="!notiHide">
+                    <img src="/static/images/down-arrow.svg">
+                </span>
+                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="notiHide">
+                    <img src="/static/images/up-arrow-no-bg.svg">
+                </span>
+            </div>
+            <!--<form v-on:submit.prevent="send" class="input-box" v-if="!notiHide">-->
+            <!--    <input type="text" placeholder="Email" v-model="textInput">-->
+            <!--    <button @click="send">Send Email</button>-->
+            <!--</form>-->
+        </footer>
+    </span>
+    <script src="/static/javascript/index.js" async defer></script>
+    <span id="google"></span>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(30, 32, 34);
+}
+
+nav{
+    display: flex;
+    background-color: black;
+    height: 3rem;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem 0 0;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    height: 2rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.container{
+    background-color: rgb(238, 238, 238);
+    height: 87vh;
+    margin: 1rem 1rem 0 1rem;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.nav-services{
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+
+}
+.nav-services:hover{
+    background-color: rgb(48, 54, 54);
+}
+
+.nav-services img{
+    height: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.nav-alert{
+    user-select: none;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+
+}
+.nav-alert:hover{
+    background-color: rgb(146, 73, 73);
+}
+
+.nav-alert img{
+    height: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.chat-box{
+    background-color: rgb(243, 243, 243);
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 3.5rem;
+    padding: 4rem 1rem 1rem 1rem;
+    display: flex;
+    z-index: 1000;
+}
+
+.btn-group{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.btn-group button:nth-child(2){
+    right: 0;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    font-weight: 100;
+    min-width: 9rem;
+    font-size: 1.7rem;
+    user-select: none;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-0.4rem);
+    -webkit-transform: translateY(-0.4rem);
+    -moz-transform: translateY(-0.4rem);
+    -ms-transform: translateY(-0.4rem);
+    -o-transform: translateY(-0.4rem);
+}
+
+.btn:active {
+    transform: translateY(-0.2rem);
+    -webkit-transform: translateY(-0.2rem);
+    -moz-transform: translateY(-0.2rem);
+    -ms-transform: translateY(-0.2rem);
+    -o-transform: translateY(-0.2rem);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-blue {
+    background-color: rgb(37, 144, 206);
+    color: white;
+}
+
+.btn-green {
+    background-color: rgb(59, 168, 92);
+    color: white;
+}
+
+.not-heading{
+    position: absolute;
+    width: 100%;
+    margin-left: -1rem;
+    text-align: center;
+    margin-top: -4rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+.messages{
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 9rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.not-mess{
+    background-color: rgb(201, 201, 201);
+    margin-top: 0.5rem;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    word-wrap: break-word;
+    hyphens:auto;
+    overflow-wrap: break-word;
+    font-weight: 100;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input{
+    width: 100%;
+    position: absolute;
+    bottom: 7rem;
+    height: 2.5rem;
+    text-indent: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    border: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.input:focus{
+    outline: none;
+}
