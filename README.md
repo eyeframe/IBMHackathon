@@ -23,8 +23,6 @@ We are plotting the anomalies on elevation vs index graph (red dots represent an
 
 ![capture2](https://user-images.githubusercontent.com/37112252/46212409-8839ee80-c353-11e8-9a10-7353061730aa.PNG)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
-![g1](https://user-images.githubusercontent.com/43675125/46228358-78d09a80-c37f-11e8-93fe-1a5c91bf6580.gif)
-
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/food_resource_management.ipynb
 
 Plotting anomaly of incoming and outgoing people per day .
@@ -38,6 +36,12 @@ incoming population and anomalies(red dots represent anomaly)
 outgoing population and anomalies(red dots represent anomaly)
 
 ![cp2](https://user-images.githubusercontent.com/43675125/46225046-b4666700-c375-11e8-9446-92686aa15755.PNG)
+# FOOD RESOURCE MANAGEMENT :
+
+informing about the current stocks remaining , how many days it will last and if the condition is critical or not
+based on the no of days left for disaster
+
+![g1](https://user-images.githubusercontent.com/43675125/46228358-78d09a80-c37f-11e8-93fe-1a5c91bf6580.gif)
 # SENDING ALERTS AND NOTIFICATIONS :
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
