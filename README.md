@@ -8,11 +8,15 @@ such as Superstructure type, Age, Area etc
 
 ![capture4](https://user-images.githubusercontent.com/37112252/46212956-ed421400-c354-11e8-879b-996803914ff0.PNG)
 # FLOOD ANOMALY DETECTION :
+https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/flood_anomaly_detection.ipynb
+
 We are using a reservoir water levels to stimulate a water body where flooding is possible
 We are plotting the anomalies on elevation vs index graph (red dots represent anomaly)
 
 ![capture2](https://user-images.githubusercontent.com/37112252/46212409-8839ee80-c353-11e8-9a10-7353061730aa.PNG)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
+https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/food_resource_management.ipynb
+
 Plotting anomaly of incoming and outgoing people per day .
 Using this we calculate the food stocks needed in order to fullfil the needs for the population residing in the 
 affected area
