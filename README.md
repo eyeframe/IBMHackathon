@@ -24,6 +24,7 @@ affected area
 incoming population and anomalies(red dots represent anomaly)
 
 ![cp1](https://user-images.githubusercontent.com/43675125/46225003-9d277980-c375-11e8-9ce9-54632807c22b.PNG)
+
 outgoing population and anomalies(red dots represent anomaly)
 
 ![cp2](https://user-images.githubusercontent.com/43675125/46225046-b4666700-c375-11e8-9446-92686aa15755.PNG)
