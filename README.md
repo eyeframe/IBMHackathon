@@ -3,6 +3,7 @@
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
+![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
 # PREDICTING BUILDING DAMAGE :
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
 
@@ -36,6 +37,7 @@ outgoing population and anomalies(red dots represent anomaly)
 # SENDING ALERTS AND NOTIFICATIONS :
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
+![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
