@@ -1,5 +1,7 @@
-# OVERVIEW :
+# PROJECT OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
+
+# FUNCIONING OF THE WEBSITE:
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
@@ -38,6 +40,10 @@ outgoing population and anomalies(red dots represent anomaly)
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 ![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
+# INFORMING PEOPLE THROUGH MESSAGES AND EMAIL :
+
+<img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
+<img src="https://user-images.githubusercontent.com/43675125/46229726-32316f00-c384-11e8-87a2-1abf927df1d5.jpg" width="400" height="800" />
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
