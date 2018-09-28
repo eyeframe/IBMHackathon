@@ -67,3 +67,7 @@ https://www.docker.com/products/docker-engine
 
 1.	sudo docker pull eyeframe/callforcode
 2.	sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
+
+if the docker pull dosen't work , follow these steps 
+1. sudo docker build -t eyeframe/callforcode
+2. sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
