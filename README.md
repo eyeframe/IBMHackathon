@@ -26,4 +26,4 @@ https://www.docker.com/products/docker-engine
 ●	Run the following lines on a command prompt : 
 
 1.	sudo docker pull eyeframe/callforcode
-2.	sudo docker run -p 8081:8081 eyeframe/callforcode
+2.	sudo docker run -p 8081:8081 eyeframe/callforcode #change this
