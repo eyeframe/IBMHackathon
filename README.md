@@ -1,5 +1,8 @@
 # OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
+
+![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
+![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
 # PREDICTING BUILDING DAMAGE :
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
 
@@ -15,6 +18,8 @@ We are plotting the anomalies on elevation vs index graph (red dots represent an
 
 ![capture2](https://user-images.githubusercontent.com/37112252/46212409-8839ee80-c353-11e8-9a10-7353061730aa.PNG)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
+![g1](https://user-images.githubusercontent.com/43675125/46228358-78d09a80-c37f-11e8-93fe-1a5c91bf6580.gif)
+
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/food_resource_management.ipynb
 
 Plotting anomaly of incoming and outgoing people per day .
@@ -28,7 +33,9 @@ incoming population and anomalies(red dots represent anomaly)
 outgoing population and anomalies(red dots represent anomaly)
 
 ![cp2](https://user-images.githubusercontent.com/43675125/46225046-b4666700-c375-11e8-9446-92686aa15755.PNG)
+# SENDING ALERTS AND NOTIFICATIONS :
 
+![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
