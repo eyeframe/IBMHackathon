@@ -21,7 +21,14 @@ Plotting anomaly of incoming and outgoing people per day .
 Using this we calculate the food stocks needed in order to fullfil the needs for the population residing in the 
 affected area
 
-![capture3](https://user-images.githubusercontent.com/37112252/46212500-ba4b5080-c353-11e8-86cc-67b69ca8e7e5.PNG)
+incoming population and anomalies(red dots represent anomaly)
+
+![capture3](https://user-images.githubusercontent.com/43675125/46222437-ee336f80-c36d-11e8-8004-b53b81f050fe.PNG)
+
+outgoing population and anomalies(red dots represent anomaly)
+
+![capture5](https://user-images.githubusercontent.com/43675125/46222452-f9869b00-c36d-11e8-8901-f12ba1cb868b.PNG)
+
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
