@@ -1,20 +1,23 @@
 # PROJECT OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
 
-# FUNCIONING OF THE WEBSITE:
+# FUNCTIONING OF THE WEBSITE:
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
 ![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
 # PREDICTING BUILDING DAMAGE :
 
-![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
 
 In this jupyter notebook we try to predict the damage of buildings in case of an earthquake based on features 
 such as Superstructure type, Age, Area etc 
 
 ![capture4](https://user-images.githubusercontent.com/37112252/46212956-ed421400-c354-11e8-879b-996803914ff0.PNG)
+
+marking the buildings in an area based on the damage it may suffer in case of an earthquake 
+
+![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 # FLOOD ANOMALY DETECTION :
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/flood_anomaly_detection.ipynb
 
@@ -22,6 +25,10 @@ We are using a reservoir water levels to stimulate a water body where flooding i
 We are plotting the anomalies on elevation vs index graph (red dots represent anomaly)
 
 ![capture2](https://user-images.githubusercontent.com/37112252/46212409-8839ee80-c353-11e8-9a10-7353061730aa.PNG)
+
+SENDING ALERTS AND NOTIFICATIONS :
+
+![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
 https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/food_resource_management.ipynb
 
@@ -42,9 +49,6 @@ informing about the current stocks remaining , how many days it will last and if
 based on the no of days left for disaster
 
 ![g1](https://user-images.githubusercontent.com/43675125/46228358-78d09a80-c37f-11e8-93fe-1a5c91bf6580.gif)
-# SENDING ALERTS AND NOTIFICATIONS :
-
-![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 # INFORMING PEOPLE THROUGH MESSAGES AND EMAIL :
 
 <img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
