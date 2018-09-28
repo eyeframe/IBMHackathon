@@ -1,6 +1,8 @@
 # OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
 # PREDICTING BUILDING DAMAGE :
+https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
+
 In this jupyter notebook we try to predict the damage of buildings in case of an earthquake based on features 
 such as Superstructure type, Age, Area etc 
 
