@@ -23,11 +23,10 @@ affected area
 
 incoming population and anomalies(red dots represent anomaly)
 
-![capture3](https://user-images.githubusercontent.com/43675125/46222437-ee336f80-c36d-11e8-8004-b53b81f050fe.PNG)
-
+![cp1](https://user-images.githubusercontent.com/43675125/46225003-9d277980-c375-11e8-9ce9-54632807c22b.PNG)
 outgoing population and anomalies(red dots represent anomaly)
 
-![capture5](https://user-images.githubusercontent.com/43675125/46222452-f9869b00-c36d-11e8-8901-f12ba1cb868b.PNG)
+![cp2](https://user-images.githubusercontent.com/43675125/46225046-b4666700-c375-11e8-9446-92686aa15755.PNG)
 
 # INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
