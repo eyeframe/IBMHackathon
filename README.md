@@ -3,7 +3,9 @@
 
 # FUNCTIONING OF THE WEBSITE:
 
-overall view of the UI and functioning of our website as a whole
+OVERALL VIEW OF OUR UI AND WEBSITE
+
+showcasing usability and services provided on the site
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
@@ -28,7 +30,7 @@ We are plotting the anomalies on elevation vs index graph (red dots represent an
 
 ![capture2](https://user-images.githubusercontent.com/37112252/46212409-8839ee80-c353-11e8-9a10-7353061730aa.PNG)
 
-SENDING ALERTS AND NOTIFICATIONS :
+sending notifications once the anomalies are detected so that proper actions could be taken
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
