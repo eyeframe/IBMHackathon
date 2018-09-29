@@ -19,7 +19,7 @@ such as Superstructure type, Age, Area etc
 
 ![capture4](https://user-images.githubusercontent.com/37112252/46212956-ed421400-c354-11e8-879b-996803914ff0.PNG)
 
-marking the buildings in an area based on the damage it may suffer in case of an earthquake 
+Marking the buildings in an area based on the damage it may suffer in case of an earthquake 
 
 ![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 # FLOOD ANOMALY DETECTION :
@@ -81,9 +81,11 @@ if the docker pull dosen't work , follow these steps
    
 2. follow the instructions given below
 
-   1>https://www.anaconda.com/download/
+•	Download anaconda and nodejs from these links
 
-   2>https://nodejs.org/en/download/
+   https://www.anaconda.com/download/
+
+   https://nodejs.org/en/download/
 
 •	Open the anaconda prompt and use `pip install -r requirements.txt` to install all the required libraries in one go 
    (requirements.txt is included in this folder) 
