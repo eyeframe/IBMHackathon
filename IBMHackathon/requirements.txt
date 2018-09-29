@@ -1,5 +1,0 @@
-requests
-mime
-numpy
-opencv-python
-twilio
