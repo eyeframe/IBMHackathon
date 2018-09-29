@@ -79,9 +79,7 @@ if the docker pull dosen't work , follow these steps
 
    `git clone https://github.com/eyeframe/IBMHackathon.git`
    
-2. download the files
-
-3. follow the instructions given below
+2. follow the instructions given below
 
    1>https://www.anaconda.com/download/
 
