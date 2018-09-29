@@ -12,7 +12,7 @@ showcasing usability and services provided on the site
 ![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
 # PREDICTING BUILDING DAMAGE :
 
-https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
+https://github.com/eyeframe/IBMHackathon/blob/master/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb
 
 In this jupyter notebook we try to predict the damage of buildings in case of an earthquake based on features 
 such as Superstructure type, Age, Area etc 
@@ -23,7 +23,7 @@ marking the buildings in an area based on the damage it may suffer in case of an
 
 ![g5](https://user-images.githubusercontent.com/43675125/46228989-9bfc4980-c381-11e8-82d4-bd0b15f6fd8c.gif)
 # FLOOD ANOMALY DETECTION :
-https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/flood_anomaly_detection.ipynb
+https://github.com/eyeframe/IBMHackathon/blob/master/jupyter_notebooks/flood_anomaly_detection.ipynb
 
 We are using a reservoir water levels to stimulate a water body where flooding is possible
 We are plotting the anomalies on elevation vs index graph (red dots represent anomaly)
@@ -34,8 +34,7 @@ sending notifications once the anomalies are detected so that proper actions cou
 
 ![g4](https://user-images.githubusercontent.com/43675125/46228744-b681f300-c380-11e8-993f-a60aeba5b676.gif)
 # POPUALTION INFLUX AND OUTFLUX ANOMALY :
-https://github.com/eyeframe/IBMHackathon/blob/master/IBMHackathon/jupyter_notebooks/food_resource_management.ipynb
-
+https://github.com/eyeframe/IBMHackathon/blob/master/jupyter_notebooks/food_resource_management.ipynb
 Plotting anomaly of incoming and outgoing people per day .
 Using this we calculate the food stocks needed in order to fullfil the needs for the population residing in the 
 affected area
@@ -48,7 +47,7 @@ outgoing population and anomalies(red dots represent anomaly)
 
 ![cp2](https://user-images.githubusercontent.com/43675125/46225046-b4666700-c375-11e8-9446-92686aa15755.PNG)
 # FOOD RESOURCE MANAGEMENT :
-
+https://github.com/eyeframe/IBMHackathon/blob/master/jupyter_notebooks/food_resource_management.ipynb
 informing about the current stocks remaining , how many days it will last and if the condition is critical or not
 based on the no of days left for disaster
 
