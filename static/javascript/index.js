@@ -1,7 +1,7 @@
 vm = new Vue({
     el: "#app",
     data: {
-        name: "asdf",
+        name: "",
         map: "",
         cover: [false, false, false, false],
         weatherData: {},
@@ -9,9 +9,6 @@ vm = new Vue({
         icons: [],
         weatherForecast: [],
         nightDay:[true,true,true],
-        notiHide:true,
-        notifications:[],
-        textInput:'',
     },
     methods: {
         initMap() {
@@ -119,17 +116,6 @@ vm = new Vue({
         nightDaySetter(index){
             Vue.set(this.nightDay,index,!this.nightDay[index]);
         },
-        readAlerts(){
-            fetch('/alert')
-                .then(res=>res.json())
-                .then(res=>{
-                    for(let x in res){
-                        let data = `${x} : ${res[x]}`;
-                        this.notifications.push(data);
-                    }
-                })
-                .catch(e=>console.log(e));
-        },
         // send(){
         //     let param ={
         //         method:'POST',
@@ -151,7 +137,6 @@ vm = new Vue({
     },
     beforeMount() {
         this.mapElementCreate();
-        this.readAlerts();
     },
     created() {
         this.initWeather();

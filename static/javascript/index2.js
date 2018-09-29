@@ -7,9 +7,12 @@ vm = new Vue({
         geocoder: '',
         marker: '',
         InfoWindow: '',
-        notification:true,
-        messages:[],
-        inputText:''
+        notification: false,
+        messages: [],
+        inputText: '',
+        notifications:[],
+        textInput:'',
+        notiHide:true,
     },
     methods: {
         async initMap() {
@@ -118,19 +121,19 @@ vm = new Vue({
         },
         createMarker(latlng, info) {
             let url;
-            if(info.indexOf('Medium Risk') != -1){
-                url = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ;
-            }else if(info.indexOf('High Risk') != -1){
+            if (info.indexOf('Medium Risk') != -1) {
+                url = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
+            } else if (info.indexOf('High Risk') != -1) {
                 url = "http://maps.google.com/mapfiles/ms/icons/orange-dot.png";
-            }else{
-                url = "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ;
+            } else {
+                url = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
             }
             let marker = new google.maps.Marker({
                 position: latlng,
                 map: this.map,
                 draggable: true,
                 animation: google.maps.Animation.DROP,
-                icon:{
+                icon: {
                     url
                 }
             });
@@ -145,36 +148,40 @@ vm = new Vue({
         redirect(url) {
             window.location.href = "/services";
         },
-        send(method){
-            let param ={
-                method:'POST',
-                headers:{
-                    'Content-type':'application/json'
+        send(method) {
+            let param = {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
                 }
             }
-            if(method === 'sms'){
-                param.body = JSON.stringify( { sms: this.inputText}); 
-                fetch('/python/sms',param)
-                    .then(res=>res.json())
-                    .then(res=>{
+            if (method === 'sms') {
+                param.body = JSON.stringify({
+                    sms: this.inputText
+                });
+                fetch('/python/sms', param)
+                    .then(res => res.json())
+                    .then(res => {
                         this.prediction = res.data;
                     })
-                    .catch((e)=>{
+                    .catch((e) => {
                         console.log(e);
                     });
-            }else{
-                param.body = JSON.stringify( { email: this.inputText}); 
-                fetch('/python/email',param)
-                    .then(res=>res.json())
-                    .then(res=>{
+            } else {
+                param.body = JSON.stringify({
+                    email: this.inputText
+                });
+                fetch('/python/email', param)
+                    .then(res => res.json())
+                    .then(res => {
                         this.prediction = res.data;
                     })
-                    .catch((e)=>{
+                    .catch((e) => {
                         console.log(e);
                     });
             }
         },
-        getMessages(){
+        getMessages() {
             fetch('/message')
                 .then(res => res.json())
                 .then(res => {
@@ -184,7 +191,18 @@ vm = new Vue({
                     console.log(e);
                 })
             console.log(this.messages);
-        }
+        },
+        readAlerts(){
+            fetch('/alert')
+                .then(res=>res.json())
+                .then(res=>{
+                    for(let x in res){
+                        let data = `${x} : ${res[x]}`;
+                        this.notifications.push(data);
+                    }
+                })
+                .catch(e=>console.log(e));
+        },
     },
     beforeCreate() {
         this.$nextTick = function () {
@@ -197,6 +215,7 @@ vm = new Vue({
     beforeMount() {
         this.mapElementCreate();
         this.getMessages();
+        this.readAlerts();
     },
 
 });

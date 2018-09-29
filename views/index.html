@@ -17,7 +17,11 @@
                 <li class="nav-logo">
                     <img src="/static/images/Logo.png" @click="window.location.href='/'">
                 </li>
-                <li class="nav-chat" @click="window.location.href='/chat'">
+                <li class="nav-btn" @click="window.location.href='/control'">
+                    <img src="/static/images/settings.svg">
+                    <h3>DASHBOARD</h3>
+                </li>
+                <li class="nav-btn" @click="window.location.href='/chat'">
                     <img src="/static/images/chat.svg">
                     <h3>CHAT</h3>
                 </li>
@@ -166,27 +170,6 @@
 
             </section>
         </main>
-
-        <footer>
-            <div :class="{'notification':true,'notification-hide':notiHide}">
-                <div v-if="!notiHide && notifications.length>0">
-                    <span v-for="notification in notifications">
-                        <span class="alerts">{{notification}}</span>
-                    </span>
-                </div>
-                <div :class="{'empty':notifications.length===0 && !notiHide}"></div>
-                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="!notiHide">
-                    <img src="/static/images/down-arrow.svg">
-                </span>
-                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="notiHide">
-                    <img src="/static/images/up-arrow-no-bg.svg">
-                </span>
-            </div>
-            <!--<form v-on:submit.prevent="send" class="input-box" v-if="!notiHide">-->
-            <!--    <input type="text" placeholder="Email" v-model="textInput">-->
-            <!--    <button @click="send">Send Email</button>-->
-            <!--</form>-->
-        </footer>
     </span>
     <script src="/static/javascript/index.js" async defer></script>
     <span id="google"></span>

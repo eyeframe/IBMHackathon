@@ -48,7 +48,26 @@
                 </span>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div :class="{'notification':true,'notification-hide':notiHide}">
+                <div v-if="!notiHide && notifications.length>0">
+                    <span v-for="notification in notifications">
+                        <span class="alerts">{{notification}}</span>
+                    </span>
+                </div>
+                <div :class="{'empty':notifications.length===0 && !notiHide}"></div>
+                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="!notiHide">
+                    <img src="/static/images/down-arrow.svg">
+                </span>
+                <span class="noti-arrow" @click="notiHide=!notiHide" v-if="notiHide">
+                    <img src="/static/images/up-arrow-no-bg.svg">
+                </span>
+            </div>
+            <!--<form v-on:submit.prevent="send" class="input-box" v-if="!notiHide">-->
+            <!--    <input type="text" placeholder="Email" v-model="textInput">-->
+            <!--    <button @click="send">Send Email</button>-->
+            <!--</form>-->
+        </footer>
     </span>
     <script src="/static/javascript/index2.js" async defer></script>
     <span id="google"></span>
