@@ -73,3 +73,9 @@ https://www.docker.com/products/docker-engine
 if the docker pull dosen't work , follow these steps 
 1. sudo docker build -t eyeframe/callforcode
 2. sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
+
+# HOW TO DIRECTLY RUN THE SERVER DIRECTLY :
+
+1.clone the repository using
+git clone https://github.com/eyeframe/IBMHackathon.git
+2.download the files using 
