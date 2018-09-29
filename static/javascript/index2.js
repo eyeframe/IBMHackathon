@@ -53,8 +53,8 @@ vm = new Vue({
                 .then(res => res.json())
                 .then(res => {
                     key = res.key;
-                    // script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=vm.initMap`;
-                    script.src = `https://maps.googleapis.com/maps/api/js?key=&callback=vm.initMap`;
+                    script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=vm.initMap`;
+                    // script.src = `https://maps.googleapis.com/maps/api/js?key=&callback=vm.initMap`;
                     script.async = true;
                     script.defer = true;
                     google.appendChild(script);
