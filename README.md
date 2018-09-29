@@ -66,25 +66,25 @@ https://www.docker.com/products/docker-engine
 
 ●	Run the following lines on a command prompt : 
 
-1.	sudo docker pull eyeframe/callforcode
-2.	sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
+1.	`sudo docker pull eyeframe/callforcode`
+2.	`sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode`
 
 if the docker pull dosen't work , follow these steps 
-1. sudo docker build -t eyeframe/callforcode
-2. sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
+1. `sudo docker build -t eyeframe/callforcode .`
+2. `sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode`
 
 # HOW TO RUN THE SERVER DIRECTLY :
 
 1. clone the repository using
 
-   git clone https://github.com/eyeframe/IBMHackathon.git
+   `git clone https://github.com/eyeframe/IBMHackathon.git`
    
 2. download the files
 
 3. follow the instructions given below
 
-   1>pip install requirements.txt
+   1>`pip install requirements.txt`
 
-   2>npm install
+   2>`npm install`
 
-   3>npm start
+   3>`npm start`
