@@ -98,7 +98,7 @@ follow the instructions given below
 
 ## IMPORTANT :
 
-If the alerts are not getting marked down (in the control page), it may be due to our API keys getting exhausted 
+If the alerts are not getting marked down (in the maps widget), it may be due to our API keys getting exhausted 
 
 In such a case create a new google account and obtain the new API key inorder to integrate it in 
 our project files (sorry for any inconvenience caused)
