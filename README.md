@@ -73,7 +73,7 @@ if the docker pull dosen't work , follow these steps
 1. sudo docker build -t eyeframe/callforcode
 2. sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode
 
-# HOW TO DIRECTLY RUN THE SERVER DIRECTLY :
+# HOW TO RUN THE SERVER DIRECTLY :
 
 1.clone the repository using
 
