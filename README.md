@@ -77,6 +77,14 @@ if the docker pull dosen't work , follow these steps
 
 1. clone the repository using
 
-git clone https://github.com/eyeframe/IBMHackathon.git
+   git clone https://github.com/eyeframe/IBMHackathon.git
 
-2. download the files using 
+2. download the files
+
+follow the instructions given below
+
+1>pip install requirements.txt
+
+2>npm install
+
+3>npm start
