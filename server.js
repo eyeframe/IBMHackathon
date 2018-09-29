@@ -62,7 +62,7 @@ app.post('/python', (req, res) => {
         let images = req.body;
         if(images.length > 1){
             images = `./static/images/${images[0]}.jpg ./static/images/${images[1]}.jpg`;
-            cmd.get(`./static/python/structure_change.py ${images}`, function (err, data, stderr) {
+            cmd.get(`python3 ./static/python/structure_change.py ${images}`, function (err, data, stderr) {
                 if (stderr) console.log(stderr);
                 if (err) console.log(err);
                 let temp = data.split('\n');
@@ -73,7 +73,7 @@ app.post('/python', (req, res) => {
         );
         }else{
             images = `./static/images/${images[0]}.jpg`;
-            cmd.get(`./static/python/Vi.py ${images}`, function (err, data, stderr) {
+            cmd.get(`python3 ./static/python/Vi.py ${images}`, function (err, data, stderr) {
                 if (stderr) console.log(stderr);
                 if (err) console.log(err);
                 let temp = data.split('\n');
