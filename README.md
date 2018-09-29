@@ -83,8 +83,12 @@ if the docker pull dosen't work , follow these steps
 
 3. follow the instructions given below
 
-   1>`pip install requirements.txt`
+   1>https://www.anaconda.com/download/
 
-   2>`npm install`
+   2>https://nodejs.org/en/download/
 
-   3>`npm start`
+•	Open the anaconda prompt and use `pip install -r requirements.txt` to install all the required libraries in one go 
+   (requirements.txt is included in this folder) 
+
+•	Open console and type `npm install` and then `npm start`
+
