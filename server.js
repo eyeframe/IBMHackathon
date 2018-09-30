@@ -11,6 +11,11 @@ const mailer = require('./mailer.js');
 const firebase = require('./firebase.js');
 const slack = require('./slack.js');
 var tts = require('./TTSService.js');
+const prompt = require('prompt');
+
+var mapApiKey = 'AIzaSyBJRJBcFIiO_TJGqHT323HSavkP0oqOq7Y';
+
+prompt.start();
 
 var textToSpeech = new TextToSpeechV1({
   username: '35ecbd89-f53e-4a22-8148-1c17da181375',
@@ -41,6 +46,8 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', ejs.renderFile);
 
+
+
 app.get('/control', (req, res) => {
   res.render('index2');
 });
@@ -55,7 +62,7 @@ app.get('/services', (req, res) => {
 
 app.get('/getApiKey', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({key : 'AIzaSyBJRJBcFIiO_TJGqHT323HSavkP0oqOq7Y'}));
+  res.send(JSON.stringify({key : mapApiKey}));
 });
 
 app.post('/python', (req, res) => {
@@ -285,9 +292,21 @@ app.get('*', (req, res) => {
     res.send('404 Error');
 });
 
-app.listen(port, () => {
-    console.log(`http://localhost:${8081}`);
-});
+prompt.get(['mapApiKey'], function (err, result) {
+    //
+    // Log the results.
+    //
+    console.log('Command-line input received:');
+    console.log('  mapApiKey: ' + result.mapApiKey);
+    mapApiKey = result.apikey;
+
+    app.listen(port, () => {
+        console.log(`http://localhost:${8081}`);
+    });
+  });
+
+
+
 
 async function parseArguements(arg) {
   var arr = arg.split(", ");
