@@ -11,11 +11,11 @@ const mailer = require('./mailer.js');
 const firebase = require('./firebase.js');
 const slack = require('./slack.js');
 var tts = require('./TTSService.js');
-const prompt = require('prompt');
+// const prompt = require('prompt');
 
-var mapApiKey = 'AIzaSyBJRJBcFIiO_TJGqHT323HSavkP0oqOq7Y';
+// var mapApiKey = 'AIzaSyBJRJBcFIiO_TJGqHT323HSavkP0oqOq7Y';
 
-prompt.start();
+// prompt.start();
 
 var textToSpeech = new TextToSpeechV1({
   username: '35ecbd89-f53e-4a22-8148-1c17da181375',
@@ -62,7 +62,7 @@ app.get('/services', (req, res) => {
 
 app.get('/getApiKey', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({key : mapApiKey}));
+  res.send(JSON.stringify({key : 'AIzaSyAqDjBpxPeqk6BgG1DehAMKPazEcuO2DzA'}));
 });
 
 app.post('/python', (req, res) => {
@@ -216,7 +216,7 @@ app.get('/alert', function(req, res) {
   firebase.getGlobalInventory(function(data){
      let result = {};
      console.log('REIEVED');
-     if(data['Condition'] == 'CRITICAL') result = data;
+     result = data;
      console.log(result);
      res.json(result);
   });
@@ -292,18 +292,20 @@ app.get('*', (req, res) => {
     res.send('404 Error');
 });
 
-prompt.get(['mapApiKey'], function (err, result) {
-    //
-    // Log the results.
-    //
-    console.log('Command-line input received:');
-    console.log('  mapApiKey: ' + result.mapApiKey);
-    mapApiKey = result.apikey;
+// prompt.get(['mapApiKey'], function (err, result) {
+//     //
+//     // Log the results.
+//     //
+//     console.log('Command-line input received:');
+//     console.log('  mapApiKey: ' + result.mapApiKey);
+//     mapApiKey = result.apikey;
 
-    app.listen(port, () => {
-        console.log(`http://localhost:${8081}`);
-    });
-  });
+    
+//   });
+
+app.listen(port, () => {
+    console.log(`http://localhost:${8081}`);
+});
 
 
 

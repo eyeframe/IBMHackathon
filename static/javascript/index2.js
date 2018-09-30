@@ -4,7 +4,6 @@ vm = new Vue({
         name: "asdf",
         map: '',
         markerData: [],
-        geocoder: '',
         marker: '',
         InfoWindow: '',
         notification: false,
@@ -25,12 +24,6 @@ vm = new Vue({
                 center: m,
                 zoom: 10
             });
-            // let address = await this.addressMarker(this.markerData)
-            //     .then(res => res)
-            //     .catch(e => {
-            //         console.log(e);
-            //     });
-
             this.InfoWindow = new google.maps.InfoWindow({});
 
             this.getCodeRecursive(0, true);
@@ -38,15 +31,14 @@ vm = new Vue({
         },
         getCodeRecursive(i, center) {
 
-            if (i > this.markerData.length)
+            if (i > this.markerData.length-2)
                 return;
             let el = this.markerData[i];
-
             const info = `<strong>${el['Address']}</strong><br>${el['Building Use']}<br>Preliminary Risk Category: <strong>${el['Preliminary Risk Category']}</strong><br>`
-            this.getGeocode(el['Address'], info, center);
+            this.getGeocode({lat:Number(el['lattitude']),lng:Number(el['longitude'])}, info, center);
             setTimeout(() => {
                 this.getCodeRecursive(++i, false)
-            }, 2000);
+            }, 0);
         },
         async mapElementCreate() {
             const google = document.querySelector("#google");
@@ -56,8 +48,7 @@ vm = new Vue({
                 .then(res => res.json())
                 .then(res => {
                     key = res.key;
-                    script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=vm.initMap`;
-                    // script.src = `https://maps.googleapis.com/maps/api/js?key=&callback=vm.initMap`;
+                    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAqDjBpxPeqk6BgG1DehAMKPazEcuO2DzA&callback=vm.initMap`;
                     script.async = true;
                     script.defer = true;
                     google.appendChild(script);
@@ -67,10 +58,11 @@ vm = new Vue({
 
         },
         getMarkerData() {
-            fetch('/static/data/BuildingData.csv')
+            fetch('/static/data/BuildingData2.csv')
                 .then(res => res.text())
                 .then(res => {
                     this.csvParser(res);
+                    
                 })
                 .catch(e => {
                     console.log(e);
@@ -91,33 +83,11 @@ vm = new Vue({
             }
             this.markerData = (res);
         },
-        async addressMarker(data) {
-            // let marker = new google.maps.Marker({
-            //     position: m,
-            //     map: this.map,
-            //     draggable: true,
-            //     animation: google.maps.Animation.DROP,
-            // });
-
-            let address = [];
-            data.forEach(element => {
-                address.push(element['Address']);
-            });
-            return address;
-        },
-        async getGeocode(address, info, center) {
-            await this.geocoder.geocode({
-                'address': address
-            }, (res, status) => {
-                if (status == 'OK') {
-                    if (center) {
-                        this.map.setCenter(res[0].geometry.location);
-                    }
-                    this.createMarker(res[0].geometry.location, info)
-                } else {
-                    console.log("unable to get geocoordnate!")
-                }
-            });
+        async getGeocode(latlng, info, center) {
+            if (center) {
+                this.map.setCenter(latlng);
+            }
+            this.createMarker(latlng, info);
         },
         createMarker(latlng, info) {
             let url;

@@ -6,6 +6,10 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 
 body {
     background-color: #141e30;

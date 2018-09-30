@@ -13,8 +13,8 @@ vm = new Vue({
     methods: {
         initMap() {
             const m = {
-                lat: 22.877000,
-                lng: 71.861800
+                lat: 47.611540,
+                lng: -122.324473
             }
             this.map = new google.maps.Map(document.getElementById('map'), {
                 center: m,
@@ -30,12 +30,12 @@ vm = new Vue({
             const google = document.querySelector("#google");
             const script = document.createElement('script');
             let key = '';
-            // fetch("/getApiKey")
-            //     .then(res=> res.json())
-            //     .then(res=>{
-            //         key = res.key;
-            //     })
-            //     .catch(err=>console.log(err));
+            fetch("/getApiKey")
+                .then(res=> res.json())
+                .then(res=>{
+                    key = res.key;
+                })
+                .catch(err=>console.log(err));
             script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=vm.initMap`;
             script.async = true;
             script.defer = true;
