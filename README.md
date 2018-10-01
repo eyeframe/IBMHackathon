@@ -1,6 +1,12 @@
 ## PROJECT OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
 
+![g1](https://user-images.githubusercontent.com/37112252/46307486-ac583280-c5d4-11e8-852d-51e98adaa379.gif)
+
+![g2](https://user-images.githubusercontent.com/37112252/46307510-bda13f00-c5d4-11e8-9a89-83a7e6cecf0c.gif)
+
+![g3](https://user-images.githubusercontent.com/37112252/46307522-c560e380-c5d4-11e8-9fb1-07bb6618f6b4.gif)
+
 ## FUNCTIONING OF THE WEBSITE:
 
 OVERALL VIEW OF OUR UI AND WEBSITE
@@ -53,7 +59,7 @@ outgoing population and anomalies(red dots represent anomaly)
 informing about the current stocks remaining , how many days it will last and if the condition is critical or not
 based on the no of days left for disaster
 
-![g1](https://user-images.githubusercontent.com/43675125/46228358-78d09a80-c37f-11e8-93fe-1a5c91bf6580.gif)
+![g4](https://user-images.githubusercontent.com/37112252/46307527-c85bd400-c5d4-11e8-9427-03555c570369.gif)
 ## INFORMING PEOPLE THROUGH MESSAGES AND EMAIL :
 
 <img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
