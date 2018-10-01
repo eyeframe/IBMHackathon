@@ -68,8 +68,8 @@ https://www.docker.com/products/docker-engine
 
 ●	Run the following lines on a command prompt : 
 
-1.	`sudo docker pull eyeframe/callforcode`
-2.	`sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcode`
+1.	`sudo docker pull eyeframe/callforcodeorg`
+2.	`sudo docker run -p 8081:8081 -it --device /dev/snd  eyeframe/callforcodeorg`
 
 if the docker pull dosen't work , follow these steps 
 1. `sudo docker build -t eyeframe/callforcode .`
