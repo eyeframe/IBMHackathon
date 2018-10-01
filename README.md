@@ -59,11 +59,6 @@ based on the no of days left for disaster
 <img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
 <img src="https://user-images.githubusercontent.com/43675125/46229726-32316f00-c384-11e8-87a2-1abf927df1d5.jpg" width="400" height="800" />
 
-## VIEW OUR SITE DIRECTLY :
-(Disclamer -> In service page , structural change API dosent work due to open_cv dependencies issues in cloud9)
-
-[Website](https://ibm-amitsingh19975.c9users.io/)
-
 ## INSTALL DOCKER :
 ●	Install a maintained version of Docker Community Edition (CE) or Enterprise Edition (EE) on a supported platform.
 
