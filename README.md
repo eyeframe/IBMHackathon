@@ -104,3 +104,5 @@ In such a case create a new google account and obtain the new API key inorder to
 our project files (sorry for any inconvenience caused)
 
 for instructions on how to use slack and its various commands , view the link below
+
+[Instructions](https://github.com/eyeframe/IBMHackathon/blob/master/instructions.txt)
