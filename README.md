@@ -1,20 +1,29 @@
 ## PROJECT OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
 
-![g1](https://user-images.githubusercontent.com/37112252/46307486-ac583280-c5d4-11e8-852d-51e98adaa379.gif)
-
-![g2](https://user-images.githubusercontent.com/37112252/46307510-bda13f00-c5d4-11e8-9a89-83a7e6cecf0c.gif)
-
-![g3](https://user-images.githubusercontent.com/37112252/46307522-c560e380-c5d4-11e8-9fb1-07bb6618f6b4.gif)
-
 ## FUNCTIONING OF THE WEBSITE:
 
 OVERALL VIEW OF OUR UI AND WEBSITE
 
 showcasing usability and services provided on the site
 
+![g1](https://user-images.githubusercontent.com/37112252/46307486-ac583280-c5d4-11e8-852d-51e98adaa379.gif)
+
+We use IBM's weather API to get current weather information and forcasted weather information for three days
+
+![g2](https://user-images.githubusercontent.com/37112252/46307510-bda13f00-c5d4-11e8-9a89-83a7e6cecf0c.gif)
+
+We can switch between the dashboard and the main website 
+
+![g6](https://user-images.githubusercontent.com/37112252/46309350-bb8daf00-c5d9-11e8-8ee3-ddc426734fdd.gif)
+
+Here you can view buildings with different levels of risks (more information regarding the prediction algorithm can be found below in 'PREDICTING BUILDING DAMAGE' section)
+
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
+![g3](https://user-images.githubusercontent.com/37112252/46307522-c560e380-c5d4-11e8-9fb1-07bb6618f6b4.gif)
+
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
+
 ![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
 ## PREDICTING BUILDING DAMAGE :
 
