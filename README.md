@@ -111,3 +111,15 @@ our project files (sorry for any inconvenience caused)
 for instructions on how to use slack and its various commands , view the link below
 
 [Instructions](https://github.com/eyeframe/IBMHackathon/blob/master/instructions.txt)
+
+In case of any issues , feel free to contact us :
+
+bahushruth.bahushruth@gmail.com
+
+k.ayush1998@gmail.com
+
+amitsingh19975@gmail.com
+
+shikhar.vaish90@gmail.com
+
+
