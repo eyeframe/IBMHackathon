@@ -20,6 +20,11 @@ We can switch between the dashboard and the main website
 Here you can view buildings with different levels of risks (more information regarding the prediction algorithm can be found below in 'PREDICTING BUILDING DAMAGE' section)
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
+
+After getting the invite and registering , you can use the following link to access the slack group
+
+[Link to slack channel](https://emergencychatroom.slack.com/messages/CD0QWF4JJ/)
+
 ![g3](https://user-images.githubusercontent.com/37112252/46307522-c560e380-c5d4-11e8-9fb1-07bb6618f6b4.gif)
 
 ![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
