@@ -27,9 +27,12 @@ After getting the invite and registering , you can use the following link to acc
 
 ![g2](https://user-images.githubusercontent.com/43675125/46228485-d8c74100-c37f-11e8-8b0f-5e49cfee6294.gif)
 
-![g3](https://user-images.githubusercontent.com/43675125/46228686-7884cf00-c380-11e8-8c29-9265cea11211.gif)
-
 ![g6](https://user-images.githubusercontent.com/43675125/46229026-c1895300-c381-11e8-90ac-0806a8233bc5.gif)
+
+Click on services tab to use the vision API used for damage assessment on satellite/drone images
+
+![g7](https://user-images.githubusercontent.com/37112252/46310621-7a979980-c5dd-11e8-9e0e-9de3e05930f1.gif)
+
 ## PREDICTING BUILDING DAMAGE :
 
 [link to jupyter notebook](https://github.com/eyeframe/IBMHackathon/blob/master/jupyter_notebooks/Earthquake_building_damage_prediction.ipynb)
