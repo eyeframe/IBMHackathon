@@ -77,6 +77,8 @@ informing about the current stocks remaining , how many days it will last and if
 based on the no of days left for disaster
 
 ![g4](https://user-images.githubusercontent.com/37112252/46307527-c85bd400-c5d4-11e8-9427-03555c570369.gif)
+
+Press the arrow on the bottom right corner to bring the inventory menu up
 ## INFORMING PEOPLE THROUGH MESSAGES AND EMAIL :
 
 <img src="https://user-images.githubusercontent.com/43675125/46229723-2fcf1500-c384-11e8-846f-ee24c57e6146.jpg" width="400" height="800" />
@@ -129,6 +131,8 @@ our project files (sorry for any inconvenience caused)
 for instructions on how to use slack and its various commands , view the link below
 
 [Instructions](https://github.com/eyeframe/IBMHackathon/blob/master/instructions.txt)
+
+(If the slack commands aren't working , it is due to the server running the slack API being down)
 
 In case of any issues , feel free to contact us :
 
