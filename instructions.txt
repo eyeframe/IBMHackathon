@@ -1,0 +1,7 @@
+/send_inventory - Sends your inventory to the room (public)
+/view_inventory - View your inventory (private)
+/get_userid - See your slack user id (private)
+/get_global_inventory - Send global stocks to the room (public)
+
+/update_inventory <ITEM>: <ITEMCOUNT>, <ITEM: <ITEMCOUNT>....
+	- update your inventory
