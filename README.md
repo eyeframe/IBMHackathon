@@ -1,3 +1,14 @@
+## Team
+* Bahushruth
+* Amit Singh
+* Ayush Kumar
+* Shikar Vaish
+
+## Topcoder Leaderboard
+https://www.topcoder.com/challenges/3dd9a090-8db3-46b7-bc84-bbe7ff8c2c3d?tab=winners 
+
+Registered user: Ayush246
+
 ## PROJECT OVERVIEW :
 ![capture](https://user-images.githubusercontent.com/37112252/46212400-8112e080-c353-11e8-9e5b-1a63c131a34a.PNG)
 
